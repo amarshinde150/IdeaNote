@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rel{
+    position: relative;
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px auto;
+    color: black;
+    background:url("../static/logo1.JPG") center
+     center/cover no-repeat;
+    margin: 20px auto;
+}
+.container{
+    padding: 200px auto;
+    width: 70vw;
+    margin-top: 20px;
+}
+#navBar{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    padding: 0px 15px;
+    top: 0px;
+    left: 0px;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #d43b3b;
+}
+
+.navBarUl{
+    display: flex;
+}
+.navBarLi{
+    margin: 0px 10px;
+    list-style: none;
+}
+.navBarLink{
+    text-decoration: none;
+    color: white;
+    padding: 16px 6px;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+}
+.navBarLink:hover{
+    color: black;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100vw;
+    font-size: 14px;
+}
+
+.myHeading{
+    color: white;
+    font-family: cursive;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.dark-color{
+    color: rgb(59, 59, 59);
+}
+
+#textArea{
+    width: 100%;
+    height: 50px;
+}
+.mybtn{
+    background-color: #d43b3b;
+    color: white;
+}
+.mybtn:hover, .mybtn:active{
+    background-color: #d43b3b;
+    color: rgb(226, 226, 226);
+    box-shadow: none;
+}
+
+.mytextarea:focus,.mytextarea:active{
+    box-shadow: #ff8181;
+    border-color: #ff8181;
+    box-shadow: 0 0 0 0.25rem rgba(212, 59, 59, 0.25);
+}
+
+#displayIdea{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    
+    padding: 1rem 1rem;
+}
+.card1{
+    margin: 10px;
+    width: 16rem;
+    position: relative;
+}
+
+#yourIdea{
+    justify-content: left;
+    width: 66vw;
+}
+
+.icon{
+    position: absolute;
+    width: 20px;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    
+}
+
+#deleteAllBtn{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    height: 27px;
+}
+
+#trashImg{
+    position: absolute;
+    left:0px;
+    margin: 2px 2px;
+    filter: invert(1);
+}
+@media screen and (max-width:400px){
+    #navBar{
+        height: 100px;
+        flex-direction: column;
+        background-color: #52d7ff;
+    }
+    .sectionOne{
+        display: flex;
+        padding: 19px 28px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ff8181;
+        text-shadow: 1px 1px rgb(255, 0, 0);
+        background-color: #ffde3b;
+        
+    }
+}
+@media (min-width: 1200px){
+h3, .h3 {
+    font-size: 1.1rem;
+}
+}

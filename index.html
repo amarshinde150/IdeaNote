@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaNote app | Amar Shinde</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="rel">
+
+        <nav class="navbar navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand">IdeaNote</a>
+                <form class="d-flex">
+                    <input class="form-control me-2 mytextarea" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn mybtn searchBtn" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="mainContainer" id="mainContainer">
+            <h3 class="myHeading dark-color">WelCome to IdeaNote</h3>
+            <div id="addIdea" class="container">
+                
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <h5 class="card-title">Add Idea</h5>
+                            <div class="mb-3">
+                                <input  type="text" class="form-control mytextarea" id="addTextTitle" placeholder="Idea title">
+                            </div>
+                            <textarea class="form-control mytextarea" id="addTextArea" rows="3" placeholder="Your idea"></textarea>
+                        </div>
+                        <button id="addIdeaBtn"class="btn btn-primary mybtn">Add Idea</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            
+            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+            <div id="addIdea" class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <button id="deleteAllBtn"class="btn btn-primary mybtn">
+                            <img  title="Delete All" id="trashImg"src="img/trash.png" class="icon">
+                        </button>
+                        <div class="mb-3">
+                            <h5 class="card-title">Your Idea</h5>
+                            <div id="displayIdea" class="container container-fluid">
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+            <!-- <h3 class="myHeading dark-color">Your Idea</h3> -->
+        </div>
+
+        <footer id="footer">
+            Copyright &copy; Amar Shinde
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
