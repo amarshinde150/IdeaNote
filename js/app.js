@@ -37,7 +37,7 @@ function displayIdea() {
                         <div class="card-body">
                             <h5 id="${idx}h5" class="card-title">${element[0]}</h5>
                             <p id="${idx}p"class="card-text">${element[1]}</p>
-                            <button href="#" id="${idx}" onClick="deleteFun(this.id)" class="btn btn-primary mybtn">Delete Idea</button>
+                            <button href="#" id="${idx}" onClick="deleteFun(this.id)" class="btn mybtn">Delete Idea</button>
                         </div>
                     </div>`
             console.log("Idea Node");
